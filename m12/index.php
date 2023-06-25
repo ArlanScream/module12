@@ -81,9 +81,8 @@ function getGenderFromName($fullName){
         $gender = 0;
     }
 
-    $genderName = mb_substr($splited_name["name"],-1,1);
 
-    if ($genderName == "a"){
+    if (mb_substr($splited_name["name"],-1,1) == "a"){
         $gender = -1;
     } elseif ($genderName == "й" || $genderName == "н"){
         $gender = 1;
