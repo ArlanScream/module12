@@ -56,8 +56,8 @@ function getPartsFromFullname($fullName){
 }
 
 function getFullnameFromParts($surname, $name, $patronomyc){
-    $fullName = [$surname, $name, $patronomyc];
-    return implode(' ', $fullName);
+    $fullName = $surname." ". $name." ". $patronomyc;
+    return $fullName;
 }
 
 function getShortName($fullName){
